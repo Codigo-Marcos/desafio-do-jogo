@@ -1,0 +1,26 @@
+function
+calcularSaldoERanque(vitorias,derrotas){
+    const saldo = vitorias - derrotas; let nivel ;
+    if(vitorias <10 ){
+        nivel="ferro";
+    } else if (vitorias >=10 && vitorias <= 20){
+        nivel="bronze";
+    }else if (vitorias >=20 && vitorias <= 50){
+        nivel="prata";
+    }else if (vitorias >=50 && vitorias <= 80){
+        nivel="ouro";
+    }else if (vitorias >=80 && vitorias <= 90){
+        nivel="diamante";
+    }else if (vitorias >=90 && vitorias <= 100){
+        nivel="lendario";
+    }else if (vitorias >=101){
+        nivel="mortal"
+    }
+    console.log('O heroi tem saldo de:$ {saldo} vitorias.');
+    console.log('Esta no nivel de:${nivel}.'
+);
+
+    let vitorias = 55;
+    let derrotas =10;
+    calcularSaldoERanque(vitorias,derrotas);
+    
